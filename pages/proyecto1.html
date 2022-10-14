@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>QUATTRO | arquitectura</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <div class="grid-contenedor">
         <header>
             <!--INICIO LOGO-->
             <div>
-                <a href="../index.html"><h1>QUATTRO<span>[arq]</span></h1></a>
-            </div> 
+                <a href="../index.html">
+                    <h1>QUATTRO<span>[arq]</span></h1>
+                </a>
+            </div>
             <!--FIN LOGO-->
             <!--INICIO NAV-->
             <nav class="nav-menu">
@@ -32,10 +38,14 @@
             <!--FIN NAV-->
             <!--INICIO REDES SOCIALES-->
             <div class="redes">
-                <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
-                <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter.png" alt="Logo Twitter"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img src="../img/linkedin.png" alt="Logo LinkedIn"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
+                        alt="Logo Instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"
+                        alt="Logo Facebook"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter.png"
+                        alt="Logo Twitter"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="../img/linkedin.png"
+                        alt="Logo LinkedIn"></a>
             </div>
             <!--FIN REDES SOCIALES-->
         </header>
@@ -46,12 +56,56 @@
             </section>
             <section class="contenedor-proyecto1">
                 <h3>Casa Container | 2022</h3>
-                <div class="grid-galeria-proyecto1">
-                    <div class="grid-item-proyecto1 img1"><img src="../img/Containter1.jpg" alt=""></div>
-                    <div class="grid-item-proyecto1 img2"><img src="../img/Containter2.jpg" alt=""></div>
-                    <div class="grid-item-proyecto1 img3"><img src="../img/Containter3.jpg" alt=""></div>
-                    <div class="grid-item-proyecto1 img4"><img src="../img/Containter4.jpg" alt=""></div>
-                    <div class="grid-item-proyecto1 img5"><img src="../img/Containter5.jpg" alt=""></div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/Container1.jpg" class="d-block w-100" alt="Exterior Casa Containter">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Container2.jpg" class="d-block w-100" alt="Exterior Casa Containter">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Container3.jpg" class="d-block w-100" alt="Exterior Casa Containter">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Container4.jpg" class="d-block w-100" alt="Interior Casa Containter">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Container5.jpg" class="d-block w-100" alt="Interior Casa Containter">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Container6.jpg" class="d-block w-100" alt="Interior Casa Containter">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Container7.jpg" class="d-block w-100" alt="Interior Casa Containter">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 <div class="info-proyecto1">
                     <div class="info-proyecto1-datos">
@@ -64,7 +118,10 @@
                     </div>
                     <div class="info-proyecto1-descripcion">
                         <h4>CASA CONTAINTER</h4>
-                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, exercitationem reprehenderit. Voluptatem dolores aut vero? Iure expedita ut soluta quod. Atque porro nisi, aut saepe, nam molestiae cupiditate placeat blanditiis vitae sunt dolorem vel dolores culpa consequuntur perspiciatis animi veniam ab doloremque nulla excepturi? Sunt.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, exercitationem reprehenderit.
+                            Voluptatem dolores aut vero? Iure expedita ut soluta quod. Atque porro nisi, aut saepe, nam
+                            molestiae cupiditate placeat blanditiis vitae sunt dolorem vel dolores culpa consequuntur
+                            perspiciatis animi veniam ab doloremque nulla excepturi? Sunt.</p>
                     </div>
                 </div>
                 <div class="enlace-volver">
@@ -93,14 +150,21 @@
                 <!--FIN DERECHOS RESERVADOS-->
                 <!--INICIO ENLACES REDES SOCIALES-->
                 <div>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
-                    <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter.png" alt="Logo Twitter"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="../img/linkedin.png" alt="Logo LinkedIn"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
+                            alt="Logo Instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"
+                            alt="Logo Facebook"></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter.png"
+                            alt="Logo Twitter"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="../img/linkedin.png"
+                            alt="Logo LinkedIn"></a>
                 </div>
                 <!--FIN ENLACES REDES SOCIALES-->
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

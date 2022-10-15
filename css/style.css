@@ -549,6 +549,17 @@ main{
     font-family: 'Tajawal', sans-serif;
     font-size: 15px;
     margin-left: 15px;
+    background-color: #313638;
+    color: #E8E9EB;
+    width: 80px;
+    border: #313638 solid;
+    border-radius: 5px;
+}
+
+.formulario-boton:focus{
+    border: #E4B363 solid;
+    background-color: #E4B363;
+    color: #313638;
 }
 
 .mapa iframe{
@@ -560,6 +571,10 @@ main{
 
 /*--------------------MAIN PROYECTO 1--------------------*/
 
+.contenedor-proyecto1{
+    width: 100%;
+}
+
 .contenedor-proyecto1 h3{
     font-family: 'Tajawal', sans-serif;
     font-size: 30px;
@@ -567,20 +582,8 @@ main{
     color:#313638;
     background-color: #E8E9EB;
     padding: 10px 0px 10px 0px;
-    margin: 75px 5px 5px 5px;
+    margin: 75px 0px 5px 0px;
     text-align: center;
-}
-
-.carousel-inner div{
-    width: 100%;
-    height: 90vh;
-}
-
-.carousel-inner div img{
-    width: 100%;
-    height: auto;
-    object-fit:contain;
-    object-position: center;
 }
 
 .info-proyecto1{
@@ -818,6 +821,28 @@ footer div a img{
         margin-bottom: 40px;
     }
 
+    .info-proyecto1{
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-proyecto1-datos{
+    width: 100%;
+    height: auto;
+    }
+
+    .info-proyecto1-descripcion{
+        width: auto;
+        margin: 10px;
+    }
+
+    .info-proyecto1-descripcion p{
+        margin: auto 40px;
+    }
+
 }
 
 @media screen and (max-width:750px){
@@ -893,6 +918,10 @@ footer div a img{
 
 @media screen and (max-width:550px){
 
+    .hero{
+        background-attachment: unset;
+    }
+
     .somos div{
         width: 300px;
     }
@@ -918,13 +947,22 @@ footer div a img{
         height: 100px;
     }
 
-    .text-area h3{
-        display: none;
+    .formulario-item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario div textarea{
+        margin-left: 0;
     }
 
     .whatsapp img{
         width: 50px;
         height: 50px;
+    }
+
+    .contenedor-proyecto1 h3{
+        font-size: 25px;
     }
 
 }

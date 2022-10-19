@@ -365,7 +365,6 @@ main{
 .grid-item a img:hover{
     transform: scale(1.05);
     filter: none;
-
 }
 
 .proyecto-1{
@@ -620,7 +619,6 @@ main{
     width: 800px;
     margin-left: 10px;
 }
-
 
 .enlace-volver a{
     width: 200px;

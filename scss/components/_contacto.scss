@@ -1,0 +1,114 @@
+@import "../base/variables";
+
+/*--------------------MAIN CONTACTO--------------------*/
+
+.main-contacto{
+    background-color: $color-principal;
+    .whatsapp{
+        position: fixed;
+        right: 2%;
+        bottom: 15%;
+    }
+    .contacto{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contacto\ background.jpg");
+        background-position:top;
+        background-size:cover;
+        background-repeat: no-repeat;
+        filter: grayscale(60%);
+        @extend %bg-pages;
+        h2{
+            @extend %titulo-pages;
+        }
+    }
+    .datos{
+        @include flex(flex, space-around,flex-start);
+        height: 150px;
+        text-align: center;
+        flex-wrap: wrap;
+        div{
+            h3{
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 30px;
+                font-weight: 600;
+                color:$color-secundario;
+                padding-bottom: 5px;
+                margin-top: 20px;
+            }
+            p{
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                color:$color-secundario;
+                width: 250px;
+                border-top: solid 2px $color-secundario;
+                padding-top: 5px;
+            }
+        }
+    }
+    .formulario{
+        width: 100%;
+        @include flex(flex, center, center);
+        margin-bottom: 20px;
+        form{
+            div{
+                margin: 5px;
+                @include flex(flex, flex-end, center);
+                label{
+                    font-family: 'Tajawal', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color:$color-secundario;
+                    margin-right: 10px;
+                }
+                .formulario-input{
+                    width: 250px;
+                    font-family: 'Tajawal', sans-serif;
+                    font-size: 15px;
+                    color:$color-principal;
+                }
+            }
+            div{
+                margin: 5px;
+                @include flex(flex, flex-end, flex-start);
+                h3{
+                    font-family: 'Tajawal', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color:$color-secundario;
+                }
+                textarea{
+                    margin-left: 10px;
+                    font-family: 'Tajawal', sans-serif;
+                    font-size: 15px;
+                    width: 250px;
+                    color:$color-principal;
+                }
+            }
+            div{
+                .formulario-boton{
+                    font-family: 'Tajawal', sans-serif;
+                    font-size: 15px;
+                    margin-left: 15px;
+                    background-color: $color-secundario;
+                    color: $color-principal;
+                    width: 80px;
+                    border: $color-secundario solid;
+                    border-radius: 5px;
+                    &:focus{
+                        border: $color-efectos solid;
+                        background-color: $color-efectos;
+                        color: $color-principal;
+                    }
+                }
+            }
+        }
+    }
+    section{
+        .mapa{
+            iframe{
+                width: 100%;
+                border: none;
+            }
+        }
+    }
+}

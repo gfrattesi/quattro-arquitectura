@@ -1,0 +1,324 @@
+/*--------------------MEDIA QUERIES--------------------*/
+
+@media screen and (max-width:1050px){
+
+    main{
+        .mision-vision{
+            flex-direction: column;
+            margin: 10px 0 10px 0;
+        }
+    } 
+}
+
+@media screen and (max-width:1000px){
+
+    main{
+        .arquitectos{
+            div{
+                img{
+                width: 150px;
+                height: 150px;
+                }
+            }
+        }
+        .somos{
+            flex-direction: column;
+        }
+    }
+
+    main{
+        .grid-galeria{
+            grid-template-columns: repeat(2, 1fr);
+            .proyecto-5{
+                grid-row: span 1;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:850px){
+
+    header{
+        .redes{
+            display: none;
+        }
+        .nav-menu{
+            .check-btn{
+                display: block;
+                .menu-icon{
+                    display: block;
+                    position: fixed;
+                    top: 20px;
+                    right:20px;
+                    cursor: pointer;
+                }
+            }
+            ul{
+                z-index: 100;
+                display: block;
+                position: fixed;
+                top: 75px;
+                left: -100%;
+                background-color: #313638;
+                width: 100%;
+                height: 100vh;
+                right: 0;
+                text-align: center;
+                transition: 1s;
+                &:hover{
+                    transition: ease-in-out;
+                }
+                li{
+                    padding: 10px;
+                    justify-content: center;
+                    margin-right: 0;
+                    &:nth-child(1){
+                        border-right: none;
+                        padding-right: 0;
+                    }
+                }
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+        }
+    } 
+
+    main{
+        .estudio{
+            height: 20vh;
+        }
+    }
+    
+
+    main{
+        .proyectos{
+            height: 20vh;
+        }
+    } 
+
+    main{
+        .enfoque{
+            height: 20vh;
+        }
+        .enfoque-contenido{
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+            margin: 40px;
+        }
+        .enfoque-contenido-reverse{
+            flex-direction: column-reverse;
+            }
+    } 
+
+    main{
+        .contacto{
+            height: 20vh;
+        }
+    }  
+
+    main{
+        section{
+            .contenedor{
+                p{
+                    width: auto;
+                    padding: auto 20px;
+                }
+            }
+        }
+    }
+
+    main{
+        .datos{
+            height: auto;
+            margin-bottom: 40px;
+        } 
+    }
+
+    main{
+        .contenedor-proyecto1{
+            .info-proyecto1{
+                flex-direction: column-reverse;
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                .info-proyecto1-datos{
+                    width: 100%;
+                    height: auto;
+                }
+                .info-proyecto1-descripcion{
+                    width: auto;
+                    margin: 10px;
+                    p{
+                        margin: auto 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .contenedor-proyecto1{
+            .info-proyecto1{
+                .info-proyecto1-datos{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (max-width:750px){
+
+    main{
+        .arquitectos{
+            height: auto;
+            flex-wrap: wrap;
+            div{
+                margin: 20px;
+            }
+        }
+        .somos{
+            div{
+                width: 450px;
+                padding: 20px 0 20px 0;
+                h3{
+                    font-size: 40px;    
+                }
+            }
+            img{
+                display: none;
+            }
+        }
+        .mision-vision{
+            div{
+                p{
+                    width: auto;
+                    margin: auto 50px;
+                }
+            }
+        }
+    } 
+
+    body{
+        .grid-contenedor{
+            grid-template-columns: 1fr;
+            grid-template-rows: 75px auto auto;
+            grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+        }
+    } 
+
+    footer{
+        div{
+            ul{
+                display: none;
+                }
+        }
+        .pie-de-pagina{
+            width: 100%;
+            flex-direction: column-reverse;
+            border-top: none;
+            text-align: center;
+            h5{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    main{
+        .grid-galeria{
+            grid-template-columns: 1fr;
+            grid-auto-rows: 600px;
+            gap: 5px;
+            margin: 50px 0 50px 0;
+            .proyecto-1{
+                grid-row: span 1;
+            }
+            .proyecto-6{
+                grid-column: span 1;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:550px){
+
+    main{
+        .hero{
+            background-attachment: unset;
+        }
+    } 
+
+    main{
+        .somos{
+            div{
+                width: 300px;
+            }
+        }
+        .mision-vision{
+            height: auto;
+            .vision{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        } 
+    } 
+
+    main{
+        section{
+            .contenedor{
+                h3{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    main{
+        .enfoque-contenido{
+            img{
+                width: 100px;
+                height: 100px;
+            }    
+        } 
+    }
+
+    main{
+        .formulario{
+            form{
+                .formulario-item{
+                    display: flex;
+                    flex-direction: column;
+                    textarea{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        .whatsapp{
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    } 
+
+    main{
+        .contenedor-proyecto1{
+            h3{
+                font-size: 25px;
+            }
+        }
+    }
+}
+/*--------------------FIN MEDIA QUERIES--------------------*/

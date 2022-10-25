@@ -1,0 +1,31 @@
+/*-----VARIABLES-----*/
+
+$color-principal: #313638;
+$color-secundario: #E8E9EB;
+$color-efectos: #E4B363;
+
+/*-----EXTENDS-----*/
+
+%titulo-pages{
+    font-family: 'Tajawal', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0px 20px 10px 0px;
+}
+
+%bg-pages{
+    width:100%;
+    height:50vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*-----MIXINS-----*/
+
+@mixin flex ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,0 +1,77 @@
+@import "../base/variables";
+
+/*--------------------MAIN PROYECTO 1--------------------*/
+
+main{
+    .proyectos{
+        background-image: url("../img/proyectos\ background.jpg");
+        background-position:top;
+        background-size:cover;
+        background-repeat: no-repeat;
+        filter: grayscale(40%);
+        @extend %bg-pages;
+        h2{
+            @extend %titulo-pages;
+        }
+    }
+    .contenedor-proyecto1{
+        width: 100%;
+        h3{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 30px;
+            font-weight: 300;
+            color:$color-principal;
+            background-color:$color-secundario;
+            padding: 10px 0px 10px 0px;
+            margin: 75px 0px 5px 0px;
+            text-align: center;
+        }
+        .info-proyecto1{
+            display: flex;
+            margin: 5px;
+            .info-proyecto1-datos{
+                width: 330px;
+                height: auto;
+                background-color: $color-secundario;
+                h4{
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color:$color-principal;
+                    margin-top: 10px;
+                }
+                p{
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    color:$color-principal
+                }
+            }
+            .info-proyecto1-descripcion{
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                color:$color-principal;
+                width: 800px;
+                margin-left: 10px;
+            }
+        }
+        .enlace-volver{
+            a{
+                width: 200px;
+                height: 60px;
+                @include flex(flex, center,center);
+                text-decoration: none;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                color:$color-principal;
+                margin-left: 20px;
+                transition: 1s;
+                &:hover{
+                    color: $color-efectos;
+                }
+            }
+        }
+    }
+}

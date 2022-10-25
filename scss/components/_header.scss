@@ -1,0 +1,75 @@
+@import "../base/variables";
+
+/*--------------------HEADER--------------------*/
+
+header{
+    position: sticky;
+    top: 0;
+    background-color:$color-principal;
+    @include flex(flex, space-between, center);
+    z-index: 100;
+    grid-area: header;
+    div{
+        a{
+            text-decoration: none;
+            color: $color-secundario;
+            h1{
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight:300;
+                font-size: 50px;
+                padding-left: 15px;
+                span{
+                    font-family: 'Barlow Condensed', sans-serif;
+                    font-weight:300;
+                    font-size: 30px;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    nav{
+        #check{
+            display: none;
+        }
+        label{
+            .menu-icon{
+                display: none;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        ul{
+            list-style: none;
+            font-family: 'Roboto Condensed', sans-serif;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            li{
+                margin-right: 10px;
+                &:nth-child(1){
+                    border-right: $color-secundario solid 1px;
+                    padding-right: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    color:$color-secundario;
+                    font-weight: 400;
+                    transition: .5s;
+                    &:hover{
+                        color:$color-efectos;
+                    }
+                }
+            }
+        }
+    }
+    .redes{
+        padding-right: 15px;
+        img{
+            width: 25px;
+            height: 25px;
+            text-align: right;
+        }
+    }
+}

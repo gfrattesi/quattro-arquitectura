@@ -1,0 +1,43 @@
+@import "../base/variables";
+
+/*--------------------MAIN INDEX--------------------*/
+
+main{
+    grid-area: main;
+    .hero{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width:100%;
+        height: calc(100vh - 75px);
+        @include flex (flex, flex-end, flex-end);
+        div{ 
+            color: white;
+            margin-right: 20px;
+            text-align: end;
+            h2{
+                font-family: 'Tajawal', sans-serif;
+                font-weight: 400;
+                font-size: 35px;
+            }
+            p{
+                font-family: 'Tajawal', sans-serif;
+                font-weight: 300;
+                font-size: 25px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: 'Tajawal', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                transition: .5s;
+                &:hover{
+                    color: $color-efectos;
+                }
+            }
+        } 
+    }
+}

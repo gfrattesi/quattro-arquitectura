@@ -1,0 +1,48 @@
+@import "../base/variables";
+
+/*--------------------MAIN ENFOQUE--------------------*/
+
+main{
+    .enfoque{
+        background-image: url("../img/enfoque\ background.jpg");
+        background-position:top;
+        background-size:cover;
+        background-repeat: no-repeat;
+        filter: grayscale(40%);
+        @extend %bg-pages;
+        h2{
+            @extend %titulo-pages;
+        }
+    }
+    .enfoque-contenido{
+        height: 250px;
+        @include flex(flex, space-evenly, center);
+        transition: 1s;
+        &:hover{
+            background-color: $color-secundario;
+        }
+        .contenedor{
+            h3{
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 30px;
+                font-weight: 600;
+                color:$color-principal;
+                padding-bottom: 5px;
+            }
+            p{
+                width: 600px;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                color:$color-principal;
+            }
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        #idea{
+            filter: opacity(80%);
+        }
+    }
+}

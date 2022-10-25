@@ -1,0 +1,763 @@
+/*--------------------FUENTES--------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap");
+/*--------------------RESET--------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*--------------------LAYOUT--------------------*/
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 75px auto 90px;
+  gap: 0px 0px;
+  grid-template-areas: "header header" "main main" "footer footer"; }
+
+/*-----VARIABLES-----*/
+/*-----EXTENDS-----*/
+main .estudio h2, main .proyectos h2, main .enfoque h2, .main-contacto .contacto h2 {
+  font-family: 'Tajawal', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0px 20px 10px 0px; }
+
+main .estudio, main .proyectos, main .enfoque, .main-contacto .contacto {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/*-----MIXINS-----*/
+/*-----VARIABLES-----*/
+/*-----EXTENDS-----*/
+main .estudio h2, main .proyectos h2, main .enfoque h2, .main-contacto .contacto h2 {
+  font-family: 'Tajawal', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0px 20px 10px 0px; }
+
+main .estudio, main .proyectos, main .enfoque, .main-contacto .contacto {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/*-----MIXINS-----*/
+/*--------------------HEADER--------------------*/
+header {
+  position: sticky;
+  top: 0;
+  background-color: #313638;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  grid-area: header; }
+  header div a {
+    text-decoration: none;
+    color: #E8E9EB; }
+    header div a h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 300;
+      font-size: 50px;
+      padding-left: 15px; }
+      header div a h1 span {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        padding-left: 5px; }
+  header nav #check {
+    display: none; }
+  header nav label .menu-icon {
+    display: none; }
+    header nav label .menu-icon img {
+      width: 30px;
+      height: 30px; }
+  header nav ul {
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    text-align: center;
+    display: flex; }
+    header nav ul li {
+      margin-right: 10px; }
+      header nav ul li:nth-child(1) {
+        border-right: #E8E9EB solid 1px;
+        padding-right: 10px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #E8E9EB;
+        font-weight: 400;
+        transition: .5s; }
+        header nav ul li a:hover {
+          color: #E4B363; }
+  header .redes {
+    padding-right: 15px; }
+    header .redes img {
+      width: 25px;
+      height: 25px;
+      text-align: right; }
+
+/*-----VARIABLES-----*/
+/*-----EXTENDS-----*/
+main .estudio h2, main .proyectos h2, main .enfoque h2, .main-contacto .contacto h2 {
+  font-family: 'Tajawal', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0px 20px 10px 0px; }
+
+main .estudio, main .proyectos, main .enfoque, .main-contacto .contacto {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/*-----MIXINS-----*/
+/*--------------------MAIN INDEX--------------------*/
+main {
+  grid-area: main; }
+  main .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; }
+    main .hero div {
+      color: white;
+      margin-right: 20px;
+      text-align: end; }
+      main .hero div h2 {
+        font-family: 'Tajawal', sans-serif;
+        font-weight: 400;
+        font-size: 35px; }
+      main .hero div p {
+        font-family: 'Tajawal', sans-serif;
+        font-weight: 300;
+        font-size: 25px; }
+      main .hero div a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        transition: .5s; }
+        main .hero div a:hover {
+          color: #E4B363; }
+
+/*-----VARIABLES-----*/
+/*-----EXTENDS-----*/
+main .estudio h2, main .proyectos h2, main .enfoque h2, .main-contacto .contacto h2 {
+  font-family: 'Tajawal', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0px 20px 10px 0px; }
+
+main .estudio, main .proyectos, main .enfoque, .main-contacto .contacto {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/*-----MIXINS-----*/
+/*--------------------MAIN ESTUDIO--------------------*/
+main .estudio {
+  background-image: url("../img/estudio background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(80%); }
+
+main .arquitectos {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  main .arquitectos div {
+    text-align: center; }
+    main .arquitectos div img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%; }
+    main .arquitectos div h3 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 300;
+      color: #313638; }
+
+main .somos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #313638; }
+  main .somos div {
+    width: 600px;
+    text-align: center; }
+    main .somos div h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 50px;
+      font-weight: 100;
+      color: #E8E9EB;
+      padding-bottom: 10px; }
+      main .somos div h3 span {
+        font-weight: 300; }
+    main .somos div p {
+      color: #E8E9EB;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      border-top: solid 2px #E8E9EB;
+      padding-top: 10px; }
+  main .somos img {
+    width: 320px;
+    height: 480px;
+    border-radius: 30%;
+    padding: 30px 0 30px 0;
+    filter: grayscale(50%); }
+
+main .mision-vision {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  text-align: center; }
+  main .mision-vision div h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #313638;
+    padding-bottom: 5px; }
+  main .mision-vision div p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #313638;
+    width: 500px; }
+
+/*-----VARIABLES-----*/
+/*-----EXTENDS-----*/
+main .estudio h2, main .proyectos h2, main .enfoque h2, .main-contacto .contacto h2 {
+  font-family: 'Tajawal', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0px 20px 10px 0px; }
+
+main .estudio, main .proyectos, main .enfoque, .main-contacto .contacto {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/*-----MIXINS-----*/
+/*--------------------MAIN PROYECTOS--------------------*/
+main .proyectos {
+  background-image: url("../img/proyectos background.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(40%); }
+
+main .grid-galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  gap: 5px;
+  margin: 50px 0 50px 0; }
+  main .grid-galeria .grid-item {
+    position: relative;
+    overflow: hidden; }
+    main .grid-galeria .grid-item a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 2s;
+      filter: grayscale(80%); }
+      main .grid-galeria .grid-item a img:hover {
+        transform: scale(1.05);
+        filter: none; }
+    main .grid-galeria .grid-item h3 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 500;
+      color: #313638;
+      text-align: center;
+      background-color: #e8e9eb5e;
+      padding: 5px 0 5px 0; }
+  main .grid-galeria .proyecto-1 {
+    grid-row: span 2; }
+  main .grid-galeria .proyecto-5 {
+    grid-row: span 2; }
+  main .grid-galeria .proyecto-6 {
+    grid-column: span 2; }
+
+/*-----VARIABLES-----*/
+/*-----EXTENDS-----*/
+main .estudio h2, main .proyectos h2, main .enfoque h2, .main-contacto .contacto h2 {
+  font-family: 'Tajawal', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0px 20px 10px 0px; }
+
+main .estudio, main .proyectos, main .enfoque, .main-contacto .contacto {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/*-----MIXINS-----*/
+/*--------------------MAIN PROYECTO 1--------------------*/
+main .proyectos {
+  background-image: url("../img/proyectos background.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(40%); }
+
+main .contenedor-proyecto1 {
+  width: 100%; }
+  main .contenedor-proyecto1 h3 {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #313638;
+    background-color: #E8E9EB;
+    padding: 10px 0px 10px 0px;
+    margin: 75px 0px 5px 0px;
+    text-align: center; }
+  main .contenedor-proyecto1 .info-proyecto1 {
+    display: flex;
+    margin: 5px; }
+    main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-datos {
+      width: 330px;
+      height: auto;
+      background-color: #E8E9EB; }
+      main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-datos h4 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #313638;
+        margin-top: 10px; }
+      main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-datos p {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #313638; }
+    main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-descripcion {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: #313638;
+      width: 800px;
+      margin-left: 10px; }
+  main .contenedor-proyecto1 .enlace-volver a {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #313638;
+    margin-left: 20px;
+    transition: 1s; }
+    main .contenedor-proyecto1 .enlace-volver a:hover {
+      color: #E4B363; }
+
+/*-----VARIABLES-----*/
+/*-----EXTENDS-----*/
+main .estudio h2, main .proyectos h2, main .enfoque h2, .main-contacto .contacto h2 {
+  font-family: 'Tajawal', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0px 20px 10px 0px; }
+
+main .estudio, main .proyectos, main .enfoque, .main-contacto .contacto {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/*-----MIXINS-----*/
+/*--------------------MAIN ENFOQUE--------------------*/
+main .enfoque {
+  background-image: url("../img/enfoque background.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(40%); }
+
+main .enfoque-contenido {
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 1s; }
+  main .enfoque-contenido:hover {
+    background-color: #E8E9EB; }
+  main .enfoque-contenido .contenedor h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #313638;
+    padding-bottom: 5px; }
+  main .enfoque-contenido .contenedor p {
+    width: 600px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #313638; }
+  main .enfoque-contenido img {
+    width: 150px;
+    height: 150px; }
+  main .enfoque-contenido #idea {
+    filter: opacity(80%); }
+
+/*-----VARIABLES-----*/
+/*-----EXTENDS-----*/
+main .estudio h2, main .proyectos h2, main .enfoque h2, .main-contacto .contacto h2 {
+  font-family: 'Tajawal', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0px 20px 10px 0px; }
+
+main .estudio, main .proyectos, main .enfoque, .main-contacto .contacto {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/*-----MIXINS-----*/
+/*--------------------MAIN CONTACTO--------------------*/
+.main-contacto {
+  background-color: #313638; }
+  .main-contacto .whatsapp {
+    position: fixed;
+    right: 2%;
+    bottom: 15%; }
+  .main-contacto .contacto {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contacto background.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(60%); }
+  .main-contacto .datos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 150px;
+    text-align: center;
+    flex-wrap: wrap; }
+    .main-contacto .datos div h3 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      color: #E8E9EB;
+      padding-bottom: 5px;
+      margin-top: 20px; }
+    .main-contacto .datos div p {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: #E8E9EB;
+      width: 250px;
+      border-top: solid 2px #E8E9EB;
+      padding-top: 5px; }
+  .main-contacto .formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; }
+    .main-contacto .formulario form div {
+      margin: 5px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .main-contacto .formulario form div label {
+        font-family: 'Tajawal', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #E8E9EB;
+        margin-right: 10px; }
+      .main-contacto .formulario form div .formulario-input {
+        width: 250px;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 15px;
+        color: #313638; }
+    .main-contacto .formulario form div {
+      margin: 5px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start; }
+      .main-contacto .formulario form div h3 {
+        font-family: 'Tajawal', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #E8E9EB; }
+      .main-contacto .formulario form div textarea {
+        margin-left: 10px;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 15px;
+        width: 250px;
+        color: #313638; }
+    .main-contacto .formulario form div .formulario-boton {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 15px;
+      margin-left: 15px;
+      background-color: #E8E9EB;
+      color: #313638;
+      width: 80px;
+      border: #E8E9EB solid;
+      border-radius: 5px; }
+      .main-contacto .formulario form div .formulario-boton:focus {
+        border: #E4B363 solid;
+        background-color: #E4B363;
+        color: #313638; }
+  .main-contacto section .mapa iframe {
+    width: 100%;
+    border: none; }
+
+/*-----VARIABLES-----*/
+/*-----EXTENDS-----*/
+main .estudio h2, main .proyectos h2, main .enfoque h2, .main-contacto .contacto h2 {
+  font-family: 'Tajawal', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0px 20px 10px 0px; }
+
+main .estudio, main .proyectos, main .enfoque, .main-contacto .contacto {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/*-----MIXINS-----*/
+/*--------------------FOOTER--------------------*/
+footer {
+  background-color: #313638;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: footer; }
+  footer div ul {
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    footer div ul li {
+      margin: 10px; }
+      footer div ul li a {
+        text-decoration: none;
+        color: #E8E9EB;
+        font-weight: 400;
+        transition: .5s; }
+        footer div ul li a:hover {
+          color: #E4B363; }
+  footer .pie-de-pagina {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: #E8E9EB solid 1px; }
+    footer .pie-de-pagina div h5 {
+      font-family: 'Tajawal', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      color: #E8E9EB; }
+      footer .pie-de-pagina div h5 span {
+        font-family: 'Barlow Condensed', sans-serif; }
+    footer .pie-de-pagina div a img {
+      width: 25px;
+      height: 25px;
+      margin: 10px 0 10px 0; }
+
+/*--------------------MEDIA QUERIES--------------------*/
+@media screen and (max-width: 1050px) {
+  main .mision-vision {
+    flex-direction: column;
+    margin: 10px 0 10px 0; } }
+
+@media screen and (max-width: 1000px) {
+  main .arquitectos div img {
+    width: 150px;
+    height: 150px; }
+  main .somos {
+    flex-direction: column; }
+  main .grid-galeria {
+    grid-template-columns: repeat(2, 1fr); }
+    main .grid-galeria .proyecto-5 {
+      grid-row: span 1; } }
+
+@media screen and (max-width: 850px) {
+  header .redes {
+    display: none; }
+  header .nav-menu .check-btn {
+    display: block; }
+    header .nav-menu .check-btn .menu-icon {
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; }
+  header .nav-menu ul {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    background-color: #313638;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    text-align: center;
+    transition: 1s; }
+    header .nav-menu ul:hover {
+      transition: ease-in-out; }
+    header .nav-menu ul li {
+      padding: 10px;
+      justify-content: center;
+      margin-right: 0; }
+      header .nav-menu ul li:nth-child(1) {
+        border-right: none;
+        padding-right: 0; }
+  header .nav-menu #check:checked ~ ul {
+    left: 0; }
+  main .estudio {
+    height: 20vh; }
+  main .proyectos {
+    height: 20vh; }
+  main .enfoque {
+    height: 20vh; }
+  main .enfoque-contenido {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    margin: 40px; }
+  main .enfoque-contenido-reverse {
+    flex-direction: column-reverse; }
+  main .contacto {
+    height: 20vh; }
+  main section .contenedor p {
+    width: auto;
+    padding: auto 20px; }
+  main .datos {
+    height: auto;
+    margin-bottom: 40px; }
+  main .contenedor-proyecto1 .info-proyecto1 {
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+    main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-datos {
+      width: 100%;
+      height: auto; }
+    main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-descripcion {
+      width: auto;
+      margin: 10px; }
+      main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-descripcion p {
+        margin: auto 40px; }
+  main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-datos {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 750px) {
+  main .arquitectos {
+    height: auto;
+    flex-wrap: wrap; }
+    main .arquitectos div {
+      margin: 20px; }
+  main .somos div {
+    width: 450px;
+    padding: 20px 0 20px 0; }
+    main .somos div h3 {
+      font-size: 40px; }
+  main .somos img {
+    display: none; }
+  main .mision-vision div p {
+    width: auto;
+    margin: auto 50px; }
+  body .grid-contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px auto auto;
+    grid-template-areas: "header" "main" "footer"; }
+  footer div ul {
+    display: none; }
+  footer .pie-de-pagina {
+    width: 100%;
+    flex-direction: column-reverse;
+    border-top: none;
+    text-align: center; }
+    footer .pie-de-pagina h5 {
+      padding-left: 20px;
+      padding-right: 20px; }
+  main .grid-galeria {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 600px;
+    gap: 5px;
+    margin: 50px 0 50px 0; }
+    main .grid-galeria .proyecto-1 {
+      grid-row: span 1; }
+    main .grid-galeria .proyecto-6 {
+      grid-column: span 1; } }
+
+@media screen and (max-width: 550px) {
+  main .hero {
+    background-attachment: unset; }
+  main .somos div {
+    width: 300px; }
+  main .mision-vision {
+    height: auto; }
+    main .mision-vision .vision {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+  main section .contenedor h3 {
+    font-size: 25px; }
+  main section .contenedor p {
+    font-size: 18px; }
+  main .enfoque-contenido img {
+    width: 100px;
+    height: 100px; }
+  main .formulario form .formulario-item {
+    display: flex;
+    flex-direction: column; }
+    main .formulario form .formulario-item textarea {
+      margin-left: 0; }
+  main .whatsapp img {
+    width: 50px;
+    height: 50px; }
+  main .contenedor-proyecto1 h3 {
+    font-size: 25px; } }
+
+/*--------------------FIN MEDIA QUERIES--------------------*/

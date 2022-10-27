@@ -63,6 +63,8 @@ header {
   header div a {
     text-decoration: none;
     color: #E8E9EB; }
+    header div a:hover {
+      color: #E8E9EB; }
     header div a h1 {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 300;

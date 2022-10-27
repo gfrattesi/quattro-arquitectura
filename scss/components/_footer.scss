@@ -13,6 +13,7 @@ footer{
             list-style: none;
             font-family: 'Roboto Condensed', sans-serif;
             @include flex (flex, flex-start, center);
+            margin-bottom: 0;
             li{
                 margin: 10px;
                 a{

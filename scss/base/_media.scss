@@ -106,20 +106,6 @@
             height: auto;
             text-align: center;
             margin: 40px;
-        }
-        .enfoque-contenido-reverse{
-            flex-direction: column-reverse;
-            }
-    } 
-
-    main{
-        .contacto{
-            height: 20vh;
-        }
-    }  
-
-    main{
-        section{
             .contenedor{
                 p{
                     width: auto;
@@ -127,7 +113,16 @@
                 }
             }
         }
-    }
+        .enfoque-contenido-reverse{
+            flex-direction: column-reverse;
+        }
+    } 
+
+    main{
+        .contacto{
+            height: 20vh;
+        }
+    }  
 
     main{
         .datos{

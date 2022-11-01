@@ -667,13 +667,13 @@ footer {
     height: auto;
     text-align: center;
     margin: 40px; }
+    main .enfoque-contenido .contenedor p {
+      width: auto;
+      padding: auto 20px; }
   main .enfoque-contenido-reverse {
     flex-direction: column-reverse; }
   main .contacto {
     height: 20vh; }
-  main section .contenedor p {
-    width: auto;
-    padding: auto 20px; }
   main .datos {
     height: auto;
     margin-bottom: 40px; }

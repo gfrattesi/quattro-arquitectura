@@ -500,7 +500,8 @@ main .estudio, main .proyectos, main .enfoque, .main-contacto .contacto {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  padding-top: 20px; }
   .main-contacto .formulario form div {
     margin: 5px;
     display: flex;

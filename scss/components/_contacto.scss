@@ -55,6 +55,7 @@
         width: 100%;
         @include flex(flex, center, center);
         padding-bottom: 20px;
+        padding-top: 20px;
         form{
             div{
                 margin: 5px;

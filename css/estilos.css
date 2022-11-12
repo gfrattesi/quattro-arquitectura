@@ -347,7 +347,8 @@ main .contenedor-proyecto1 {
     main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-datos {
       width: 330px;
       height: auto;
-      background-color: #E8E9EB; }
+      background-color: #E8E9EB;
+      padding-left: 10px; }
       main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-datos h4 {
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 18px;
@@ -694,7 +695,8 @@ footer {
     justify-content: center; }
     main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-datos {
       width: 100%;
-      height: auto; }
+      height: auto;
+      padding-left: 0; }
     main .contenedor-proyecto1 .info-proyecto1 .info-proyecto1-descripcion {
       width: auto;
       margin: 10px; }

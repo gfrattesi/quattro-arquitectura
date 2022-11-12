@@ -1,5 +1,5 @@
 <h1 align="center">Hola! 👋, este proyecto es QUATTRO | Arquitectura</h1>
-<h3 align="center">Proyecto en desarrollo</h3>
+<h3 align="center">Proyecto para Estudio de Arquitectura</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

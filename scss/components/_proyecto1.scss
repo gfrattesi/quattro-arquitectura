@@ -16,18 +16,10 @@ main{
     }
     .contenedor-proyecto1{
         width: 100%;
-        h3{
-            font-family: 'Tajawal', sans-serif;
-            font-size: 30px;
-            font-weight: 300;
-            color:$color-principal;
-            background-color:$color-secundario;
-            padding: 10px 0px 10px 0px;
-            margin: 75px 0px 5px 0px;
-            text-align: center;
-        }
+        margin-top: 50px;
         .info-proyecto1{
             display: flex;
+            margin-top: 10px;
             .info-proyecto1-datos{
                 width: 330px;
                 height: auto;

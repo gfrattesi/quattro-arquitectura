@@ -3,52 +3,58 @@
 /*--------------------MAIN CONTACTO--------------------*/
 
 .main-contacto{
-    background-color: $color-principal;
     .whatsapp{
         position: fixed;
         right: 2%;
         bottom: 15%;
     }
     .contacto{
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contacto\ background.jpg");
-        background-position:top;
+        background-image: url("../img/contacto\ background.jpg");
+        background-position:center;
         background-size:cover;
         background-repeat: no-repeat;
-        filter: grayscale(60%);
+        filter: grayscale(40%);
         @extend %bg-pages;
         h2{
             @extend %titulo-pages;
         }
     }
     .datos{
+        background-color: $color-principal;
         @include flex(flex, space-around,flex-start);
-        height: 150px;
         text-align: center;
         flex-wrap: wrap;
+        padding-bottom: 20px;
         div{
             h3{
                 font-family: 'Roboto Condensed', sans-serif;
-                font-size: 30px;
-                font-weight: 600;
+                font-size: 20px;
+                font-weight: 400;
                 color:$color-secundario;
                 padding-bottom: 5px;
                 margin-top: 20px;
+                text-transform: uppercase;
             }
             p{
-                font-family: 'Roboto Condensed', sans-serif;
-                font-size: 20px;
+                font-family: 'Tajawal', sans-serif;
+                font-size: 15px;
                 font-weight: 300;
                 color:$color-secundario;
                 width: 250px;
-                border-top: solid 2px $color-secundario;
+                border-top: solid 1px $color-secundario;
                 padding-top: 5px;
             }
         }
     }
     .formulario{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background-form.jpg");
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         width: 100%;
         @include flex(flex, center, center);
-        margin-bottom: 20px;
+        padding-bottom: 20px;
         form{
             div{
                 margin: 5px;
@@ -65,6 +71,10 @@
                     font-family: 'Tajawal', sans-serif;
                     font-size: 15px;
                     color:$color-principal;
+                    opacity: 80%;
+                    &:focus{
+                        background-color: $color-secundario;
+                    }
                 }
             }
             div{
@@ -82,6 +92,10 @@
                     font-size: 15px;
                     width: 250px;
                     color:$color-principal;
+                    opacity: 80%;
+                    &:focus{
+                        background-color: $color-secundario;
+                    }
                 }
             }
             div{
@@ -89,10 +103,10 @@
                     font-family: 'Tajawal', sans-serif;
                     font-size: 15px;
                     margin-left: 15px;
-                    background-color: $color-secundario;
-                    color: $color-principal;
+                    background-color: $color-principal;
+                    color: $color-secundario;
                     width: 80px;
-                    border: $color-secundario solid;
+                    border: $color-principal solid 2px;
                     border-radius: 5px;
                     &:focus{
                         border: $color-efectos solid;

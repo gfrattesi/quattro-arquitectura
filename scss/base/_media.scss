@@ -55,7 +55,8 @@
             }
             ul{
                 z-index: 100;
-                display: block;
+                @include flex(flex, center, center);
+                flex-direction: column;
                 position: fixed;
                 top: 75px;
                 left: -100%;
@@ -65,12 +66,12 @@
                 right: 0;
                 text-align: center;
                 transition: 1s;
+                font-size: 20px;
                 &:hover{
                     transition: ease-in-out;
                 }
                 li{
-                    padding: 10px;
-                    justify-content: center;
+                    padding: 20px 0 20px 0;
                     margin-right: 0;
                     &:nth-child(1){
                         border-right: none;
@@ -118,18 +119,11 @@
         }
     } 
 
-    main{
+    .main-contacto{
         .contacto{
             height: 20vh;
         }
-    }  
-
-    main{
-        .datos{
-            height: auto;
-            margin-bottom: 40px;
-        } 
-    }
+    } 
 
     main{
         .contenedor-proyecto1{
@@ -310,8 +304,10 @@
 
     main{
         .contenedor-proyecto1{
-            h3{
-                font-size: 25px;
+            .info-proyecto1{
+                .info-proyecto1-descripcion{
+                    font-size: 18px;
+                }
             }
             .enlace-volver{
                 display: flex;
